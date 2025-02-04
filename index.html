@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+
+        <style>
+            .work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.work__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.work__content {
+    max-width: 800px;
+    background: #f8f8f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.work__title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.work__subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.work__list {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.work__list li {
+    margin-bottom: 8px;
+}
+
+.work__text {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+        </style>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Vinay </a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact me</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Vinay</span><br>Shaping Web</h1>
+
+                    <a href="./assets/img/Vinay_resume.pdf" class="button">Resume(Clickable)</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/vinay-gajavelli-1873781b3" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="mailto:gajavellivinay@gmail.com" class="home__social-icon"><i class='bx bxs-envelope'></i></a>
+           
+                <a href="https://www.instagram.com/21_vinay_04/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/blackno.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/withbgblack.jpg" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Vinay Gajavelli</h2>
+                        <p class="about__text">A Master's graduate in Management Information Systems with a passion for front-end development, UI/UX, SQL, Python, and Java. I specialize in building responsive web applications and working with databases to create efficient solutions. I'm actively seeking opportunities in software development, data analytics, or IT support.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+            
+                <div class="skills__container bd-grid">
+                    <!-- Left Side: Skills Info -->
+                    <div class="skills__content">
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <p class="skills__text">
+                            Proficient in Python, Java, JavaScript, SQL, and front-end development with strong UI/UX skills. 
+                            Experienced in data analytics, problem-solving, and building efficient applications.
+                        </p>
+            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-paint skills__icon'></i>
+                                <span class="skills__name">UI/UX Designer</span>
+                            </div>
+                            <div class="skills__bar skills__uiux"></div>
+                            <div>
+                                <span class="skills__percentage">97%</span>
+                            </div>
+                        </div>
+            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code-alt skills__icon'></i>
+                                <span class="skills__name">Web Designer</span>
+                            </div>
+                            <div class="skills__bar skills__webdesign"></div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-python skills__icon'></i>
+                                <i class='bx bxl-java skills__icon'></i>
+                                <span class="skills__name">Python & Java</span>
+                            </div>
+                            <div class="skills__bar skills__pythonjava"></div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+            
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-data skills__icon'></i>
+                                <span class="skills__name">SQL Database</span>
+                            </div>
+                            <div class="skills__bar skills__sql"></div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Right Side: Image -->
+                    <div class="skills__image">
+                        <img src="assets/img/work3.jpg" alt="Skills Image" class="skills__img">
+                    </div>
+                </div>
+            </section>
+            
+                        <!-- <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                     -->
+                    
+                    
+                     <!-- <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section> -->
+
+            <!--===== WORK =====-->
+            <section class="skills section" id="work">
+                <!--===== WORK EXPERIENCE =====-->
+                <!--===== WORK EXPERIENCE =====-->
+<!--===== WORK EXPERIENCE =====-->
+<!--===== WORK EXPERIENCE =====-->
+<section class="work section" id="experience">
+    <h2 class="section-title">Work</h2>
+
+    <div class="work__container">
+        <div class="work__content">
+            <h3 class="work__title">Front-End Development Intern</h3>
+            <p class="work__subtitle">Capgemini Internship </p>
+            <ul class="work__list">
+                <li>Developed and optimized front-end components using HTML, CSS, and JavaScript.</li>
+                <li>Worked on enhancing UI/UX design and improving website responsiveness.</li>
+                <li>Collaborated with backend developers to ensure seamless data integration.</li>
+                <li>Debugged and optimized website performance for a better user experience.</li>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    <div class="work__container">
+        <div class="work__content">
+            <h3 class="work__title"> UI/UX Prototypes</h3>
+            <ul class="work__list">
+                <li><strong><a href="https://xd.adobe.com/view/68e7a908-1782-4f9f-a614-2ff48ba719c2-3db4/">Book Stall App Prototype(Clickable)</a></strong></li>
+                <li><strong><a href="https://xd.adobe.com/view/44c77f6a-d997-4c5a-9ae3-853e30b7025a-1194/">Doctor’s Appointment Booking App Prototype(Clickable)</a></strong></strong></li>
+            </ul>
+            <p class="work__text">Designed and prototyped intuitive applications using Adobe XD. Specialized in crafting seamless user interfaces, emphasizing UI/UX design, Adobe XD prototyping, and user interaction enhancement.</p>
+        </div>
+    </div>
+</section>
+
+
+
+                
+                <section class="work section" id="projects">
+                    <h2 class="section-title">Projects</h2>
+                
+                    <div class="skills__container bd-grid">
+                        <b><p class="skills__subtitle">Fiscal Insights: Unveiling Louisville Metro's Expenditure Dynamics (Master's Data Mining Project)</p></b>
+                        <p class="skills__text">
+                            Analyzing Government Expenditures - Louisville Metro's expenditures for the fiscal year 2022-2023.
+                            This project provides insights into financial trends, expenditure categories, and budget allocations. 
+                            It includes vendor names, invoiced amounts, funding sources, and agency-specific spending.
+                            <br><br>
+                            <b>Role:</b> Ensured Excel data consistency and accuracy before analyzing and visualizing expenditure 
+                            data using Tableau software. The objective was to determine the total amount spent in Louisville Metro 
+                            during the fiscal year 2022-2023.
+                        </p>
+                    </div>
+
+                    <div class="skills__container bd-grid">
+                        <b><p class="skills__subtitle"><a href="https://vinaygajavelli13.github.io/Breath-of-the-wild/">Breath of the Wild: A Nature-Inspired Blog(Clickable)</a></p></b>
+                        <p class="skills__text">
+                            Breath of the Wild" is a minimalist, nature-themed blog designed to capture the beauty of wild landscapes and serene moments. 
+                            Built with HTML, CSS, and Bootstrap, the blog features a responsive layout with a clean navigation bar, dynamic image sections, and an engaging subscription modal. 
+                            The project emphasizes simplicity, smooth user experience, and showcases my skills in front-end development and UI design. This blog not only highlights 
+                            the raw beauty of nature through vivid imagery but also demonstrates my ability to create aesthetically pleasing, functional websites..
+                            <br><br>
+                            <b>Role:</b> Front-End Developer & UI/UX Designer
+
+                            In this project, I was responsible for designing the user interface, developing the front-end structure using HTML, CSS, and Bootstrap, and ensuring 
+                            a responsive and user-friendly layout. I implemented interactive components like the navigation bar, subscription modal, and image display features 
+                            while focusing on clean design and smooth functionality.
+                        </p>
+                    </div>
+
+
+                <!-- <div class="skills__container bd-grid">
+                <h2 class="section-title">Work</h2>
+                <b><p class="skills__subtitle">Fiscal Insights: Unveiling Louisville Metro's Expenditure Dynamics (Master's Data Mining Project)</p></b>
+                <p class="skills__text">Analyzing Government Expenditures - Louisville Metro
+                    '
+                    s expenditures for that specific fiscal year.
+                    It covers a variety of businesses and governmental functions and offers incisive data on financial
+                    trends, expenditure categories, and budgets allocations. The information includes vendor names,
+                    invoiced amounts, funding sources, and agency-specific spending for Fiscal Year 2022–2023.
+                    Role - As part of this project, I have to ensure that the Excel data is consistent and accurate
+                    before analysing and displaying the expenditure data using Tableau software. The objective
+                    is to ascertain the total amount spent in Louisville Metro during the fiscal year 2022–
+                    2023.</p> <br>
+                    </div> -->
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            
+            <!-- <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Enter" class="contact__button button">
+                    </form>
+                </div>
+            </section> -->
+        </main>
+
+        <!--===== FOOTER =====-->
+        <!-- <section id = "contact">
+        <footer class="footer">
+            <p class="footer__title">Vinay</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/vinay-gajavelli-1873781b3" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://www.instagram.com/21_vinay_04/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                <a href="mailto:gajavellivinay@gmail.com" class="footer__icon"><i class='bx bxs-envelope'></i></a>
+                <a href="tel:+13147010920" class="home__social-icon"><i class='bx bx-phone'></i></a>
+                <a href="#contact" class="home__social-icon"><i class='bx bx-phone'></i>  <!-- Contact icon --></a>
+           
+            <!-- </div>
+            <p class="footer__copy">Contact: +1(314)7010920</p>
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p> -->
+        <!-- </footer>
+    <!-- </section> --> --> -->
+
+    <section id="contact">
+        <footer class="footer">
+            <p class="footer__title">Vinay</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/vinay-gajavelli-1873781b3" class="footer__icon">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://www.instagram.com/21_vinay_04/" class="footer__icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="mailto:gajavellivinay@gmail.com" class="footer__icon">
+                    <i class='bx bxs-envelope'></i>
+                </a>
+                <a href="tel:+13147010920" class="footer__icon">
+                    <i class='bx bx-phone'></i> <!-- Call icon -->
+                </a>
+                
+            </div>
+            <p class="footer__copy">Contact: +1 (314) 701-0920</p>
+            <p class="footer__copy">&#169; All rights reserved</p>
+        </footer>
+    </section>
+    
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
